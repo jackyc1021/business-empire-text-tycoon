@@ -1,27 +1,71 @@
-# AI-Assisted Production Workflow
+# AI-Assisted Development Workflow
 
-## How AI Was Used
+## Overview
 
-AI tools supported several stages of the project:
+Business Empire: Text Tycoon was developed through a multi-model AI-assisted workflow.
 
-- **Concept exploration:** feature ideation, progression-loop refinement, and system specification drafts.
-- **Visual production:** generation of character illustrations, manager portraits, shards, and UI art concepts.
-- **Implementation support:** code drafting, debugging assistance, refactoring suggestions, and test-case ideation.
-- **Quantitative analysis:** simulation-script assistance, interpretation of balance outputs, and identification of edge cases.
-- **Documentation:** organization of design decisions, QA evidence, and implementation handoffs.
+The project owner defined the game concept and requirements, coordinated different AI tools, evaluated generated outputs, and integrated accepted code and visual assets into a browser-based project.
 
-## Human Review and Control
+## AI Tool Responsibilities
 
-AI output was treated as a draft, not as an authority. The workflow used explicit review gates:
+| AI Tool | Project Responsibilities |
+|---|---|
+| **Claude** | Generated the initial game source code based on the overall project requirements. |
+| **ChatGPT** | Supported visual asset generation, subsequent code refinements, and iterative debugging. |
+| **Google Gemini** | Supported visual asset generation and occasional prompt optimization. |
 
-1. Define the intended behavior and constraints before generation or implementation.
-2. Review visual outputs against rarity, style, transparency, and character-identity requirements.
-3. Preserve stable IDs and save compatibility when changing runtime data.
-4. Run automated tests after code changes.
-5. Keep unresolved decisions visible instead of silently converting proposals into shipped behavior.
+Each tool supported different stages of the project, while overall direction, output evaluation, and integration were coordinated by the project owner.
 
-## What This Demonstrates
+## Project Owner Responsibilities
 
-The project demonstrates practical use of AI as a multiplier across creative and technical workflows: turning a broad concept into a structured specification, iterating on visual assets, building simulation tools, and validating a browser-game prototype.
+- Conceived and planned the game.
+- Defined gameplay direction, visual style, user interface, and desired features.
+- Decomposed broad requirements into smaller tasks.
+- Reviewed AI-generated code and visual assets against the intended requirements.
+- Identified mismatches and communicated targeted feedback.
+- Directed iterative improvements.
+- Integrated generated code and assets into one project.
 
-The portfolio claim is intentionally limited to the work represented in this repository. AI assistance does not replace software engineering judgment, QA, platform compliance, or production operations.
+## Development Workflow
+
+### 1. Requirement Definition
+
+Established the intended game experience, including gameplay direction, visual style, interface structure, and desired features.
+
+### 2. Requirement Decomposition
+
+Translated broad project goals into smaller, manageable tasks that could be independently reviewed and refined.
+
+### 3. AI-Assisted Generation
+
+Assigned tasks to different AI tools according to their roles. Claude generated the initial source code, while ChatGPT and Gemini supported visual production. ChatGPT also supported subsequent code refinements, and Gemini occasionally assisted with prompt optimization.
+
+### 4. Output Evaluation
+
+Reviewed generated code and visual assets against the original requirements. AI-generated outputs were treated as drafts requiring evaluation rather than automatically accepted results.
+
+### 5. Iterative Refinement
+
+Identified specific issues, provided targeted feedback, and directed further improvements until the results were sufficiently aligned with the intended design and functionality.
+
+### 6. Integration
+
+Integrated accepted code and visual assets into the browser-based game and reviewed the combined result.
+
+## Skills Demonstrated
+
+- Multi-model AI coordination
+- Prompt engineering and prompt refinement
+- Requirement decomposition
+- AI output evaluation
+- AI output integration
+- Iterative testing and issue identification
+- AI-assisted debugging
+
+## Project Attribution
+
+This is an AI-assisted personal project. Claude generated the initial game source code, while ChatGPT and Google Gemini supported visual asset generation and other refinement tasks as described above.
+
+The project owner was responsible for the overall concept, requirements, AI tool coordination, output evaluation, feedback, and integration.
+
+The purpose of this project is to demonstrate practical AI application and workflow development, rather than to imply that all code and assets were independently authored by the project owner.
