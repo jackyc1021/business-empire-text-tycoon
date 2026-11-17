@@ -1,66 +1,82 @@
 # Business Empire: Text Tycoon
 
-> An anime-inspired idle business management game prototype exploring incremental progression, manager collection, long-horizon economy design, and AI-assisted production workflows.
+> A browser-based idle business game developed through a multi-model AI-assisted workflow, demonstrating requirement decomposition, AI output evaluation, integration, and iterative refinement.
 
-<p align="center">
-  <strong>Portfolio Project · H5 / PWA · JavaScript · Economy Simulation · AI-Assisted Art Pipeline</strong>
-</p>
+**Personal Project | AI-Assisted Development | HTML5 / JavaScript**
 
 ## Project Overview
 
-**Business Empire: Text Tycoon** is a browser-based management game prototype. Players start with a small street-side business, reinvest operating income, unlock larger commercial ventures, and build a team of collectible managers whose abilities influence the business.
+**Business Empire: Text Tycoon** is a browser-based idle business management game concept. The project began with a gameplay vision and requirements covering progression, visual direction, user interface, and game features. AI tools supported the process of turning that vision into a functional browser-based prototype.
 
-This repository is organized as a public-facing engineering portfolio: the runnable prototype, platform integration contracts, art assets, automated regression checks, and selected economy research are separated into clear areas.
+This project demonstrates how multiple AI tools can be coordinated in a practical development workflow. Rather than claiming that every component was independently programmed, the focus is on requirement decomposition, evaluating AI-generated outputs, and integrating code and visual assets into one coherent project.
 
-## Highlights
+## My Role & Responsibilities
 
-- **Idle + active management loop** — collect operating income, reinvest in shop upgrades, and expand through a multi-region business catalogue.
-- **Manager collection and team building** — an 18-manager roster across five rarity tiers, with levels, stars, abilities, and a six-member active team.
-- **Long-horizon economy work** — Python simulations and CSV outputs used to inspect progression curves, reward pacing, offline settlement, and diminishing returns.
-- **PWA support** — landscape-oriented standalone web app with a service worker and local asset caching.
-- **Provider-neutral integration design** — ad and cloud-save contracts are separated from vendor-specific SDKs.
-- **AI-assisted creative workflow** — character and UI asset production is treated as a repeatable pipeline with explicit mapping and asset validation.
+I was responsible for defining the project direction and coordinating the overall AI-assisted development process.
 
-## Current Build
+- Conceived and planned the browser-based idle business game.
+- Defined the gameplay direction, visual style, user interface, and desired features.
+- Decomposed overall project requirements into smaller tasks for AI-assisted production.
+- Evaluated AI-generated code and visual assets against the intended design and functionality.
+- Provided feedback and directed iterative improvements.
+- Integrated generated code and visual assets into a unified project.
 
-| Item | Value |
+## Multi-Model AI Workflow
+
+Different AI tools were used for different stages of development.
+
+| AI Tool | Responsibilities |
 |---|---|
-| Game version | 2.19.1 |
-| Save schema | v6 |
-| Source bundle | v1.36 |
-| Runtime entry | [`src/game/index.html`](src/game/index.html) |
-| Platform | H5 / Progressive Web App |
-| Primary implementation | HTML, CSS, JavaScript |
-| Simulation / QA | Python, Node.js |
+| **Claude** | Generated the initial game source code based on the overall project requirements. |
+| **ChatGPT** | Supported visual asset generation, subsequent code refinements, and iterative debugging. |
+| **Google Gemini** | Supported visual asset generation and occasional prompt optimization. |
 
-## Run Locally
+### Development Workflow
 
-The game is a static web application. For the best PWA behavior, serve it from `localhost` rather than opening the HTML file directly.
+1. **Planning** — Defined the game concept, gameplay direction, visual style, interface, and desired features.
+2. **Requirement Decomposition** — Divided broad project requirements into smaller, manageable tasks.
+3. **AI-Assisted Generation** — Used different AI tools to generate initial code and visual assets.
+4. **Output Evaluation** — Reviewed generated results against the intended requirements and identified issues.
+5. **Iterative Refinement** — Provided targeted feedback and directed improvements.
+6. **Integration** — Combined accepted code and visual assets into the browser-based game.
+7. **Testing & Improvement** — Reviewed the integrated results, identified problems, and continued refining the project.
 
-```bash
-python -m http.server 8000 --directory src/game
-```
+## Game Features
 
-Then open:
+The prototype explores several idle business management systems:
 
-- http://localhost:8000
+- Idle business progression and shop upgrades
+- Collectible managers and manager progression
+- Recruitment and reward systems
+- Offline income and time-based progression
+- Tasks, events, and progression incentives
+- Browser-based gameplay with Progressive Web App (PWA) support
 
-The game references artwork under `src/game/assets`. If you run the page from a different web root, preserve the relative asset layout or adjust the asset base paths accordingly.
+Feature completeness varies across systems. Please refer to the source code and project documentation for implementation details.
 
-## Repository Layout
+## Technology & Tools
+
+- **Programming:** HTML, CSS, JavaScript
+- **Platform:** Browser-based H5 Game / Progressive Web App
+- **AI Tools:** Claude, ChatGPT, Google Gemini
+- **Supporting Materials:** Python and JavaScript-based QA and simulation scripts
+
+My programming foundation includes Python fundamentals and basic NumPy. This project primarily demonstrates practical experience in coordinating AI-assisted development workflows rather than claiming advanced independent programming expertise.
+
+## Repository Structure
 
 ```text
 .
 ├── src/
-│   ├── game/                 # Runtime entry, manifest, service worker, and assets
-│   └── platform/             # Provider-neutral integration contracts
+│   ├── game/                 # Game source code, PWA files, and assets
+│   └── platform/             # Platform integration contracts
 ├── scripts/
-│   ├── qa/                   # Economy and long-horizon simulation scripts
-│   └── regression/           # Runtime and integration regression checks
+│   ├── qa/                   # QA and simulation scripts
+│   └── regression/           # Regression checks
 ├── research/
-│   ├── economy/              # Economy simulation datasets and workbooks
-│   ├── managers/             # Manager balance and roster datasets
-│   └── metadata/             # Machine-readable simulation metadata
+│   ├── economy/              # Economy datasets and workbooks
+│   ├── managers/             # Manager roster and balance datasets
+│   └── metadata/             # Simulation metadata
 └── docs/
     ├── ARCHITECTURE.md
     ├── GAME_SYSTEMS.md
@@ -71,18 +87,21 @@ The game references artwork under `src/game/assets`. If you run the page from a 
     └── ROADMAP.md
 ```
 
-## Engineering Notes
+## Running Locally
 
-- The current runtime is a single-page HTML application with embedded JavaScript and CSS. This is intentionally documented as the current architecture rather than presented as a modular framework application.
-- Automated checks cover source integrity, catalogue structure, core logic, resources, map/navigation, save/task cycles, team/offline rewards, and manager campaign logic.
-- Passing automated checks does **not** imply real-device visual acceptance. Browser and physical-device QA remain separate release gates.
-- Real advertising SDKs, cloud-save credentials/backends, and native store packaging are not configured in this prototype.
+This project is a static web application.
 
-## AI as a Production Tool
+To run it locally, use Python's built-in HTTP server:
 
-AI was used as part of an iterative production workflow across concept development, visual asset generation, code assistance, documentation, and economy-analysis support. The project emphasizes human review and integration rather than treating generated output as automatically production-ready.
+```bash
+python -m http.server 8000 --directory src/game
+```
 
-See [AI Workflow](docs/AI_WORKFLOW.md) for the workflow, quality controls, and portfolio framing.
+Then open:
+
+http://localhost:8000
+
+Serving the game through localhost is recommended for testing browser features such as service-worker behavior.
 
 ## Project Documentation
 
@@ -94,6 +113,22 @@ See [AI Workflow](docs/AI_WORKFLOW.md) for the workflow, quality controls, and p
 - [Platform Integrations](docs/PLATFORM_INTEGRATIONS.md)
 - [Roadmap & Known Limitations](docs/ROADMAP.md)
 
-## Portfolio Disclaimer
+## Scope & Limitations
 
-This is a development prototype and portfolio demonstration, not a production release. Some catalogue entries and economy parameters are design candidates rather than shipped runtime content. Platform integrations that require external credentials or SDKs are represented by contracts only.
+This repository contains a development prototype and supporting project materials, not a production release.
+
+- The current game runtime is a browser-based HTML application.
+- External advertising and cloud-save services are represented by integration contracts. Production SDKs and credentials are not included.
+- Automated QA scripts and historical test reports are included, but the reports should not be interpreted as fresh validation of every file in this reorganized repository.
+- Real-device visual QA, production platform integration, and release preparation remain separate tasks.
+
+## What This Project Demonstrates
+
+- Multi-model AI tool coordination
+- Prompt engineering and prompt refinement
+- Requirement decomposition
+- Evaluation of AI-generated code and visual assets
+- Integration of AI-generated outputs into a functional browser-based project
+- Iterative testing, issue identification, and AI-assisted debugging
+
+**The central objective of this project is to demonstrate how AI tools can be effectively coordinated as part of a structured development workflow — from defining requirements and guiding generation to evaluating outputs and integrating improvements into a functional application.**
