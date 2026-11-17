@@ -1,0 +1,5 @@
+experiment,route,runs,intl_rate,future_rate,finance_p50,shops_p50,levels_p50
+activity_strategy,balanced3,144,1.0,0.5,18.0,23.0,176.5
+route,balanced3,28,1.0,0.0,18.0,20.0,177.0
+route,concentrate,28,1.0,0.0,18.0,20.5,177.0
+route,spread6,28,1.0,0.0,18.0,20.0,177.0

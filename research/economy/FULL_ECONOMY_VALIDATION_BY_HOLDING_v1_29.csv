@@ -1,0 +1,12 @@
+experiment,holding,runs,intl_rate,future_rate,finance_p50,shops_p50,levels_p50
+activity_strategy,average,36,1.0,0.5,18.0,22.5,176.5
+activity_strategy,mythic_luck,36,1.0,0.5,18.0,22.5,176.5
+activity_strategy,none,36,1.0,0.5,17.0,23.0,176.5
+activity_strategy,zero_mythic,36,1.0,0.5,18.0,22.5,176.5
+route,average,12,1.0,0.0,18.0,20.0,177.0
+route,early_epic,12,1.0,0.0,18.0,20.0,177.0
+route,early_legendary,12,1.0,0.0,18.0,20.0,177.0
+route,low_common_rare,12,1.0,0.0,17.0,21.0,177.0
+route,mythic_luck,12,1.0,0.0,18.0,20.0,177.0
+route,none,12,1.0,0.0,17.0,21.0,177.0
+route,zero_mythic,12,1.0,0.0,18.0,20.0,177.0

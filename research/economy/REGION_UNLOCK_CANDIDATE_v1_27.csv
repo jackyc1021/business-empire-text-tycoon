@@ -1,0 +1,7 @@
+region_id,region_name,status,unlock_cost_candidate,condition_candidate,approval_status
+street,街角商圈,existing_confirmed,0,初始区域,已确认
+food,美食街,existing_code_baseline,500,街角小摊Lv.2,现有代码基线_待完整模拟复核
+mall,购物中心,existing_code_baseline,5000,精品酒店开业且商铺总等级达到4,现有代码基线_待完整模拟复核
+finance,金融中心,existing_code_baseline,50000,城市购物中心开业且商铺总等级达到7,现有代码基线_待完整模拟复核
+international,国际商务区,candidate_only,1500000000000,金融中心至少3家店开业且区域总等级达到30并累计经营收入达到5万亿金币（候选）,未批准_仅供30店联合模拟
+future,未来科技城,candidate_only,200000000000000,国际商务区至少4家店开业且区域总等级达到40并累计经营收入达到500万亿金币（候选）,未批准_仅供30店联合模拟

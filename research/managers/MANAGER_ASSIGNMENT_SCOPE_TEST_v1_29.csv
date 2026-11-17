@@ -1,0 +1,8 @@
+holding,owned,assigned,unique_managers,unique_shops,max_region_occupancy,constraints_pass
+none,0,0,True,True,0,True
+low_common_rare,3,3,True,True,2,True
+average,5,5,True,True,2,True
+early_epic,5,5,True,True,2,True
+early_legendary,5,5,True,True,2,True
+zero_mythic,8,8,True,True,2,True
+mythic_luck,6,6,True,True,2,True

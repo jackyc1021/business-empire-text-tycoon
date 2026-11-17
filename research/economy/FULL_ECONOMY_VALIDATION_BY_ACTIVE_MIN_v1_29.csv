@@ -1,0 +1,5 @@
+experiment,active_min,runs,intl_rate,future_rate,finance_p50,shops_p50,levels_p50
+activity_strategy,12.5,48,1.0,0.0,35.0,17.0,87.0
+activity_strategy,30.0,48,1.0,0.5,18.0,23.0,176.5
+activity_strategy,75.0,48,1.0,1.0,7.0,30.0,491.5
+route,30.0,84,1.0,0.0,18.0,20.0,177.0

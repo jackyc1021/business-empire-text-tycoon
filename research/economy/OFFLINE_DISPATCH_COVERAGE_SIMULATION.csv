@@ -1,0 +1,2 @@
+offline_skill_managers_assumed,districts,runs,mean_districts_covered,p10_covered,p50_covered,p90_covered,assumption
+2,6,1000000,1.83258,1,2,2,"Two eligible managers independently assigned uniformly to one of six districts; illustrative only, not a player-acquisition forecast"

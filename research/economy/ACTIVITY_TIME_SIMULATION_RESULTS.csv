@@ -1,0 +1,4 @@
+activity,avg_daily_minutes,avg_daily_actions,median_30d_shop_levels,median_finance_unlock_day,runs
+light,12.49,6.44,194,4,500
+normal,30.00,16.16,485,2,500
+heavy,75.00,41.05,1232,2,500

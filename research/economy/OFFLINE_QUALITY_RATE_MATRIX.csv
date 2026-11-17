@@ -1,0 +1,16 @@
+rarity,level,star,candidate_region_rate,quality_cap
+Epic,1,1,0.6,0.7
+Epic,25,2,0.62447,0.7
+Epic,50,3,0.649646,0.7
+Epic,75,4,0.674823,0.7
+Epic,100,5,0.7,0.7
+Legendary,1,1,0.6,0.75
+Legendary,25,2,0.636705,0.75
+Legendary,50,3,0.67447,0.75
+Legendary,75,4,0.712235,0.75
+Legendary,100,5,0.75,0.75
+Mythic,1,1,0.6,0.85
+Mythic,25,2,0.661174,0.85
+Mythic,50,3,0.724116,0.85
+Mythic,75,4,0.787058,0.85
+Mythic,100,5,0.85,0.85

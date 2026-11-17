@@ -1,0 +1,3 @@
+curve,cost_exponent_p,income_exponent_q,formula,status
+baseline,1.0,1.0,Income=baseIncome*level^q; upgradeCost=baseCost*(level+1)^p,Current runtime is linear; baseline scenario
+candidate,1.1,0.85,Income=baseIncome*level^q; upgradeCost=baseCost*(level+1)^p,Simulation only; not applied to runtime
